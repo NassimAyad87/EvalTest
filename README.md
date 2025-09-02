@@ -1,7 +1,5 @@
 # EvalTest
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16989620.svg)](https://doi.org/10.5281/zenodo.16989620)
-![GitHub all releases](https://img.shields.io/github/downloads/NassimAyad87/EvalTest/total)
-
 
 
 ## Overview
@@ -69,6 +67,7 @@ To cite the 'EvalTest' package in publications, use:
 ``` r
 citation("EvalTest")
 ```
+
 
 
 
