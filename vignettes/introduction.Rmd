@@ -2,7 +2,7 @@
 title: "Introduction to EvalTest"
 author: "Nassim Ayad"
 date: "`r Sys.Date()`"
-output: rmarkdown::github_document
+output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Introduction to EvalTest}
   %\VignetteEngine{knitr::rmarkdown}
@@ -104,4 +104,5 @@ If you use 'EvalTest' in your research, please cite it as follows:
 ```{r citation, eval = FALSE}
 citation("EvalTest")
 ```
+
 
