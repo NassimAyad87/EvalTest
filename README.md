@@ -1,4 +1,7 @@
 # EvalTest
+[![CRAN status](https://www.r-pkg.org/badges/version/EvalTest)](https://CRAN.R-project.org/package=EvalTest)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16989619.svg)](https://doi.org/10.5281/zenodo.16989619)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/EvalTest)](https://cran.r-project.org/package=EvalTest)
 
 ## Overview
 
