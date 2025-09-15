@@ -58,7 +58,7 @@ This will open the application in your default web browser (or RStudio viewer pa
 
 -   You can download the ROC plot and the results table for your report.
 
-For more details, [Lire la vignette du package](https://cran.r-project.org/web/packages/EvalTest/vignettes/introduction.html) 
+For more details, [read this vignette](https://cran.r-project.org/web/packages/EvalTest/vignettes/introduction.html) 
 
 ## License
 
@@ -72,6 +72,6 @@ To cite the 'EvalTest' package in publications, use this script:
 citation("EvalTest")
 ```
 
-Or just cite as:
+Or just copy this citation:
 
 Ayad N (2025). EvalTest: A Shiny App to Evaluate Diagnostic Tests Performance. R package version 1.0.2. CRAN. Available from: <https://CRAN.R-project.org/package=EvalTest>
