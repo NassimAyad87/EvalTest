@@ -29,7 +29,7 @@ You can install the development version of 'EvalTest' from GitHub like so:
 devtools::install_github("NassimAyad87/EvalTest", dependencies = TRUE)
 ```
 
-Or from CRAN (after the package is published there):
+Or from CRAN:
 
 ``` r
 install.packages(EvalTest)
