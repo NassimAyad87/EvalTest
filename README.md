@@ -3,7 +3,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16989619.svg)](https://doi.org/10.5281/zenodo.16989619)
 [![](https://cranlogs.r-pkg.org/badges/grand-total/EvalTest)](https://cran.r-project.org/package=EvalTest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/NassimAyad87/EvalTest/blob/main/LICENSE.md)
-[![License](https://img.shields.io/cran/l/EvalTest)](https://CRAN.R-project.org/package=EvalTest)
 
 
 ## Overview
