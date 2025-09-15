@@ -1,6 +1,4 @@
 # EvalTest
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16989620.svg)](https://doi.org/10.5281/zenodo.16989620)
-
 
 ## Overview
 
@@ -25,6 +23,7 @@ You can install the development version of 'EvalTest' from GitHub like so:
 ``` r
 devtools::install_github("NassimAyad87/EvalTest", dependencies = TRUE)
 ```
+
 Or from CRAN (after the package is published there):
 
 ``` r
@@ -40,15 +39,15 @@ library(EvalTest)
 run_app()
 ```
 
-This will open the application in your default web browser (or RStudio viewer pane) and follow these steps: 
+This will open the application in your default web browser (or RStudio viewer pane) and follow these steps:
 
 -   Before uploading your data, you should ensure that: the test variable is in one column (either qualitative or quantitative) and the reference variable (disease status) is in another column (binary: 1/0). There are no missing values in the selected columns.
 
--   Upload your data in Excel format (.xlsx). 
+-   Upload your data in Excel format (.xlsx).
 
--   Choose your variable test type (Qualitative or Quantitative). 
+-   Choose your variable test type (Qualitative or Quantitative).
 
--   Select the appropriate columns for test variable and reference variable (disease status). 
+-   Select the appropriate columns for test variable and reference variable (disease status).
 
 -   Input disease prevalence value (between 0 and 1) of the study population.
 
@@ -62,12 +61,12 @@ This package is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Citation
 
-To cite the 'EvalTest' package in publications, use:
+To cite the 'EvalTest' package in publications, use this script:
 
 ``` r
 citation("EvalTest")
 ```
 
+Or just cite as (after the package is published there):
 
-
-
+-   Ayad N (2025). EvalTest: A Shiny App to Evaluate Diagnostic Tests Performance. R package version 1.0.2. CRAN. Available from: <https://CRAN.R-project.org/package=EvalTest>
