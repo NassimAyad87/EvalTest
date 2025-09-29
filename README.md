@@ -76,4 +76,4 @@ citation("EvalTest")
 
 Or just copy this citation:
 
-Ayad N (2025). EvalTest: A Shiny App to Evaluate Diagnostic Tests Performance. R package version 1.0.2. CRAN. Available from: <https://CRAN.R-project.org/package=EvalTest>
+Ayad N (2025). EvalTest: A Shiny App to Evaluate Diagnostic Tests Performance. R package version 1.0.2. CRAN. <https://doi.org/10.32614/CRAN.package.EvalTest>
