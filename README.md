@@ -31,7 +31,7 @@ devtools::install_github("NassimAyad87/EvalTest", dependencies = TRUE)
 Or from CRAN:
 
 ``` r
-install.packages(EvalTest)
+install.packages("EvalTest")
 ```
 
 ## Compute diagnostic test indicators
