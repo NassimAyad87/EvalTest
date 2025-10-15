@@ -31,7 +31,7 @@ ui <- dashboardPage(
                                    "Quantitative" = "quant"),
                        selected = "qual"),
           selectInput("var_test", "Test variable", choices = NULL),
-          selectInput("var_ref", "Reference variable (binary 1/0 as 1 for for disease: yes)", choices = NULL),
+          selectInput("var_ref", "Reference variable (binary 1/0 as 1 for disease: yes)", choices = NULL),
           numericInput("prev", "Disease prevalence (in the population)", value = 0.1, min = 0, max = 1, step = 0.01),
           actionButton("analyser", "Run analysis", icon = icon("play"), class = "btn-warning"),
           br()
@@ -355,3 +355,4 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+
