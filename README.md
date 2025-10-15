@@ -41,7 +41,7 @@ Launch the Shiny application using:
 
 ``` r
 library(EvalTest)
-run_app()
+EvalTest::run_app()
 ```
 
 This will open the application in your default web browser (or RStudio viewer pane) and follow these steps:
