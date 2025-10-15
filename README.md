@@ -4,14 +4,13 @@
 [![](https://cranlogs.r-pkg.org/badges/grand-total/EvalTest)](https://cran.r-project.org/package=EvalTest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/NassimAyad87/EvalTest/blob/main/LICENSE.md)
 
-
 ## Overview
 
 **EvalTest** is an R Shiny application designed for evaluating diagnostic test performance. It aims to facilitate the application of statistical methods in diagnostic test evaluation by healthcare professionals.
 
 ## Description
 
-The 'EvalTest' package provides a 'Shiny' application for evaluating diagnostic test performance using data from laboratory or diagnostic research. It supports both binary and continuous test variables. It allows users to compute and visualize:
+The 'EvalTest' package provides a function to compute diagnostic performance indicators and provides a 'Shiny' application for evaluating diagnostic test performance using data from laboratory or diagnostic research. It supports both binary and continuous test variables. It allows users to compute and visualize:
 
 -   **Confusion matrix**: for binary test results (or threshold categorized quantitative test results) and disease status.
 
@@ -23,7 +22,7 @@ The 'EvalTest' package provides a 'Shiny' application for evaluating diagnostic 
 
 ## Installation
 
-You can install the development version of 'EvalTest' from GitHub like so:
+You can install the development version of 'EvalTest' from GitHub like so (if you have `devtools` package installed):
 
 ``` r
 devtools::install_github("NassimAyad87/EvalTest", dependencies = TRUE)
@@ -35,12 +34,31 @@ Or from CRAN:
 install.packages(EvalTest)
 ```
 
+## Compute diagnostic test indicators
+
+The function `compute_indicators()` computes sensitivity, specificity, predictive values, likelihood ratios, accuracy, and Youden index with their confidence intervals based on a 2x2 table of diagnostic test results:
+
+``` r
+library(EvalTest)
+compute_indicators(tp, fp, fn, tn, prev, conf = 0.95)
+```
+
+Where:
+
+-   `tp`: True positives
+-   `fp`: False positives
+-   `fn`: False negatives
+-   `tn`: True negatives
+-   `prev`: Prevalence of the disease in the population (numeric between 0 and 1)
+-   `conf`: Confidence level (default 0.95)
+
+It returns a list with all diagnostic indicators and confidence intervals.
+
 ## Using the Application
 
 Launch the Shiny application using:
 
 ``` r
-library(EvalTest)
 EvalTest::run_app()
 ```
 
