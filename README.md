@@ -94,4 +94,4 @@ citation("EvalTest")
 
 Or just copy this citation:
 
-Ayad N (2025). EvalTest: A Shiny app to evaluate diagnostic tests performance. R package version 1.0.3. <https://doi.org/10.32614/CRAN.package.EvalTest>
+Ayad N (2025). EvalTest: A Shiny app to evaluate diagnostic tests performance. R package version 1.0.4. <https://doi.org/10.32614/CRAN.package.EvalTest>
