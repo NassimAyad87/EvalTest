@@ -248,19 +248,19 @@ server <- function(input, output, session) {
       ci.upper = ci_obj[, 3]
     )
 
-    ggroc(roc_obj, color = "blue", size = 1.2) +
+    ggroc(roc_obj, color = "blue", linewidth = 1.2) +
       geom_ribbon(data = ci_df,
                   aes(x = specificities, ymin = ci.lower, ymax = ci.upper),
                   fill = "lightblue", alpha = 0.3, inherit.aes = FALSE) +
       annotate("point", x = best$specificity, y = best$sensitivity,
-               color = "red", size = 3) +
+               color = "red", linewidth = 3) +
       annotate("text", x = best$specificity + 0.03, y = best$sensitivity + 0.05,
                label = paste0("Cut-off:", round(best$threshold, 3)),
-               color = "red", size = 5, fontface = "bold") +
+               color = "red", linewidth = 5, fontface = "bold") +
       annotate("text", x = 0.25, y = 0.10,
                label = paste0("AUC = ", round(auc_val, 3),
                               " [", round(auc_ci[1], 3), " – ", round(auc_ci[3], 3), "]"),
-               size = 5, color = "black") +
+               linewidth = 5, color = "black") +
       annotate("segment", x = best$specificity, xend = best$specificity,
                y = 0, yend = best$sensitivity,
                linetype = "dotted", color = "darkgreen") +
@@ -324,19 +324,19 @@ server <- function(input, output, session) {
         ci.lower = ci_obj[, 1],
         ci.upper = ci_obj[, 3]
       )
-      g <- ggroc(roc_obj, color = "blue", size = 1.2) +
+      g <- ggroc(roc_obj, color = "blue", linewidth = 1.2) +
         geom_ribbon(data = ci_df,
                     aes(x = specificities, ymin = ci.lower, ymax = ci.upper),
                     fill = "lightblue", alpha = 0.3, inherit.aes = FALSE) +
         annotate("point", x = best$specificity, y = best$sensitivity,
-                 color = "red", size = 3) +
+                 color = "red", linewidth = 3) +
         annotate("text", x = best$specificity + 0.03, y = best$sensitivity + 0.05,
                  label = paste0("Cut-off:", round(best$threshold, 3)),
-                 color = "red", size = 4, fontface = "bold") +
+                 color = "red", linewidth = 4, fontface = "bold") +
         annotate("text", x = 0.2, y = 0.10,
                  label = paste0("AUC = ", round(auc_val, 3),
                                 " [", round(auc_ci[1], 3), " – ", round(auc_ci[3], 3), "]"),
-                 size = 5, color = "black") +
+                 linewidth = 5, color = "black") +
         annotate("segment", x = best$specificity, xend = best$specificity,
                  y = 0, yend = best$sensitivity,
                  linetype = "dotted", color = "darkgreen") +
