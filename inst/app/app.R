@@ -123,9 +123,6 @@ server <- function(input, output, session) {
       ret = c("threshold", "sensitivity", "specificity", "tp", "fp", "tn", "fn"),
       transpose = FALSE
     )
-    best_cutoff <- as.numeric(best$threshold[1])
-    Se <- as.numeric(best$sensitivity[1])
-    Sp <- as.numeric(best$specificity[1])
 
     best_cutoff <- as.numeric(best$threshold[1])
     Se <- as.numeric(best$sensitivity[1])
@@ -253,14 +250,14 @@ server <- function(input, output, session) {
                   aes(x = specificities, ymin = ci.lower, ymax = ci.upper),
                   fill = "lightblue", alpha = 0.3, inherit.aes = FALSE) +
       annotate("point", x = best$specificity, y = best$sensitivity,
-               color = "red", linewidth = 3) +
+               color = "red", size = 3) +
       annotate("text", x = best$specificity + 0.03, y = best$sensitivity + 0.05,
                label = paste0("Cut-off:", round(best$threshold, 3)),
-               color = "red", linewidth = 5, fontface = "bold") +
+               color = "red", size = 5, fontface = "bold") +
       annotate("text", x = 0.25, y = 0.10,
                label = paste0("AUC = ", round(auc_val, 3),
                               " [", round(auc_ci[1], 3), " – ", round(auc_ci[3], 3), "]"),
-               linewidth = 5, color = "black") +
+               size = 5, color = "black") +
       annotate("segment", x = best$specificity, xend = best$specificity,
                y = 0, yend = best$sensitivity,
                linetype = "dotted", color = "darkgreen") +
@@ -329,14 +326,14 @@ server <- function(input, output, session) {
                     aes(x = specificities, ymin = ci.lower, ymax = ci.upper),
                     fill = "lightblue", alpha = 0.3, inherit.aes = FALSE) +
         annotate("point", x = best$specificity, y = best$sensitivity,
-                 color = "red", linewidth = 3) +
+                 color = "red", size = 3) +
         annotate("text", x = best$specificity + 0.03, y = best$sensitivity + 0.05,
                  label = paste0("Cut-off:", round(best$threshold, 3)),
-                 color = "red", linewidth = 4, fontface = "bold") +
+                 color = "red", size = 4, fontface = "bold") +
         annotate("text", x = 0.2, y = 0.10,
                  label = paste0("AUC = ", round(auc_val, 3),
                                 " [", round(auc_ci[1], 3), " – ", round(auc_ci[3], 3), "]"),
-                 linewidth = 5, color = "black") +
+                 size = 5, color = "black") +
         annotate("segment", x = best$specificity, xend = best$specificity,
                  y = 0, yend = best$sensitivity,
                  linetype = "dotted", color = "darkgreen") +

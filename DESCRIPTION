@@ -1,6 +1,6 @@
 Package: EvalTest
 Title: A 'shiny' App to Evaluate Diagnostic Tests Performance
-Version: 1.0.4
+Version: 1.0.5
 Authors@R: 
     person(given = "Nassim", family = "AYAD", email = "nassim.ayad.ph@gmail.com", 
     role = c("aut", "cre"),

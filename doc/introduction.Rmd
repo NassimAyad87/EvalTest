@@ -279,7 +279,7 @@ citation("EvalTest")
 
 Or just cite as (after the package is published there):
 
-Ayad N (2025). EvalTest: A Shiny App to evaluate diagnostic tests performance. R package version 1.0.4. <https://CRAN.R-project.org/package=EvalTest>
+Ayad N (2025). EvalTest: A Shiny App to evaluate diagnostic tests performance. R package version 1.0.5. <https://CRAN.R-project.org/package=EvalTest>
 
 ## References {#references}
 
