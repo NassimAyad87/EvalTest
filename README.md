@@ -6,7 +6,7 @@
 
 ## Overview
 
-**EvalTest** is an R Shiny application designed for evaluating diagnostic test performance. It aims to facilitate the application of statistical methods in diagnostic test evaluation by healthcare professionals.
+**EvalTest** is an R package designed for evaluating diagnostic test performance. It aims to facilitate the application of statistical methods in diagnostic test evaluation by healthcare professionals.
 
 ## Description
 
@@ -94,4 +94,4 @@ citation("EvalTest")
 
 Or just copy this citation:
 
-Ayad N (2025). EvalTest: A Shiny app to evaluate diagnostic tests performance. R package version 1.0.5. <https://doi.org/10.32614/CRAN.package.EvalTest>
+Ayad N (2026). EvalTest: Tools for Evaluating Diagnostic Test Performance. R package version 1.0.6. <https://doi.org/10.32614/CRAN.package.EvalTest>
