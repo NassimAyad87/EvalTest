@@ -2,7 +2,7 @@
 
 ## Changes in this version
 
-- Updated package title better reflect the existence of a function to compute indicators not (just the Shiny app).
+- Updated package title better reflect the existence of a function to compute indicators (along with the Shiny app).
 - Updated description to clarify that the package provides both a function for computing diagnostic indicators and a Shiny application for evaluating diagnostic test performance.
 - Refined script for calculating confidence intervals of PPV and NPV to improve statistical accuracy.
 - Renamed outputs returned by `compute_indicators()` for improved consistency and readability.
